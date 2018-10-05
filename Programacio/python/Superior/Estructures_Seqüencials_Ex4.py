@@ -13,10 +13,20 @@
 # S'ha de llegir una hora amb valors enters i amb el format: hh mmm sss
 # Mostrara per sortida el format correcte de l'hora en cas de que estigui malament. 
 
-hora = int(input("Quina hora vols saber? "))
+segons = int(input("Quants segons vols? "))
 
-preu_total = (preu*13/100)+preu
+minuts = int(input("Quants minuts vols? "))
+
+hores = int(input("Quantes hores vols? "))
+
+if (segons < 60):
+
+	segons = segons + (segons % 60)
+
+minuts = segons = segons + (segons % 60)
+
+hores = hores + (hores % 60)
 
 print ("")
-print ("El preu total de l'article aplicant-li el 13% d'IVA és: ", preu_total)
+print ("El total de temps introduit és: ",hores, "hores, ", minuts, "minuts i ", segons, "segons")
 print ("")
