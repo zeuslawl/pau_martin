@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# coding: utf8
+# -*-coding: utf8-*-
 
 # Pau Martín Arnau
 # isx46420653
@@ -8,6 +8,7 @@
 
 # Calcular el sou d'un treballador que cobra un preu fix per hora pero que el redueix en 
 # un 10% per als impostos.
+
 # S'ha de llegir el nom del treballador, les hores treballades 
 # i el preu que cobra per hora. 
 
