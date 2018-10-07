@@ -4,7 +4,7 @@
 # Pau Martín Arnau
 # isx46420653
 # 05/10/18
-# Versió final, sense IF
+# Versió final, sense IF 
 
 # Que demani una hora amb valors enters, transformar l'hora donada a un format correcte,
 # en cas de que no ho sigui, i mostrar per pantalla l'hora correcte que ha introduit 
