@@ -4,7 +4,7 @@
 # Pau Martín Arnau
 # isx46420653
 # 05/10/18
-# Falten corregir els minuts, poden passar de 60
+# Versió final, sense IF
 
 # Que demani una hora amb valors enters, transformar l'hora donada a un format correcte,
 # en cas de que no ho sigui, i mostrar per pantalla l'hora correcte que ha introduit 
@@ -33,6 +33,8 @@ segons_totals = segons - augment_segons*60
 
 # Calcularem l'excès de minuts, es a dir, que passin de 60 per a després 
 # poder augmentar-los a les hores
+
+minuts = minuts + augment_segons
 
 augment_minuts = (minuts // 60)
 
