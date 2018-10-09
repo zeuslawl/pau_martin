@@ -43,7 +43,7 @@ augment_minuts = (minuts // 60)
 # despres afegir aquest numero a les hores totals, a més també afegim els segons que 
 # em calculat anteriorment que superaven els 60.  
 
-minuts_totals = minuts - augment_minuts*60 + augment_segons
+minuts_totals = minuts - augment_minuts*60
 
 # Les hores no les hem de calcular, ja que podem posar més de 24, el que si que hem de fer
 # es afegir-les el numero d'augment dels minuts.
