@@ -45,12 +45,41 @@ augment_minuts = (minuts // 60)
 
 minuts_totals = minuts - augment_minuts*60
 
-# Les hores no les hem de calcular, ja que podem posar més de 24, el que si que hem de fer
-# es afegir-les el numero d'augment dels minuts.
+# Les hores també les calcularem, dividirem les hores totals en 24 per a saber si sumen algun dia.
 
-hores_totals = hores + augment_minuts
+hores = hores + augment_minuts
 
-# Fem un print de les variables. 
-print ("")
-print ("El total de temps introduit és:",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
-print ("")
+dies = (hores // 24)
+
+hores_totals = hores - dies*24
+
+# Ara calcularem les setmanes del temps introduit
+
+setmanes = (dies // 7)
+
+dies = dies - setmanes*7
+
+# Ara calcularem els mesos del temps introduit
+
+mesos = (setmanes // 4)
+
+setmanes = setmanes - mesos*4
+
+# Ara calcularem els anys del temps introduit
+
+anys = (mesos // 12)
+
+mesos = mesos - anys*12
+
+
+if dies >= 1:
+
+	print ("")
+	print ("El total de temps introduit és:",anys, "anys,",mesos, "mesos,",setmanes, "setmanes,",  dies, "dies,",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
+	print ("")
+
+else:
+
+	print ("")
+	print ("El total de temps introduit és:",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
+	print ("")
