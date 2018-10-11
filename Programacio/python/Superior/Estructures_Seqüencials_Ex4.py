@@ -72,14 +72,36 @@ anys = (mesos // 12)
 mesos = mesos - anys*12
 
 
-if dies >= 1:
+if anys >= 1: 
 
 	print ("")
 	print ("El total de temps introduit és:",anys, "anys,",mesos, "mesos,",setmanes, "setmanes,",  dies, "dies,",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
 	print ("")
 
-else:
+else: 
+	
+	if mesos >= 1: 
+			
+		print ("")
+		print ("El total de temps introduit és:",mesos, "mesos,",setmanes, "setmanes,",  dies, "dies,",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
+		print ("")
 
-	print ("")
-	print ("El total de temps introduit és:",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
-	print ("")
+	else: 
+						
+		if setmanes >= 1:
+			print ("")
+			print ("El total de temps introduit és:",setmanes, "setmanes,",  dies, "dies,",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
+			print ("")
+		
+		else: 
+			
+			if dies >= 1:
+				print ("")
+				print ("El total de temps introduit és:",  dies, "dies,",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
+				print ("")
+	
+			else:
+
+				print ("")
+				print ("El total de temps introduit és:",hores_totals, "hores,", minuts_totals, "minuts i", segons_totals, "segons")
+				print ("")
