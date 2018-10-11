@@ -71,6 +71,7 @@ anys = (mesos // 12)
 
 mesos = mesos - anys*12
 
+# Fem un print de totes les variables de manera que es vegi tot bonic. 
 
 if anys >= 1: 
 
