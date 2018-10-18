@@ -44,7 +44,7 @@ R: Es va crear el World Wide Web, i ho van crear investigadors del laboratori eu
 
 Fes un diagrama de l'arquitectura de Von Neumann:
 
-'''                       +------------------------------------------+
+```                       +------------------------------------------+
                           |                                          |
                           |  +------------------------------------+  |
                           |  |   Central Processing Unit          |  |
@@ -75,7 +75,7 @@ Fes un diagrama de l'arquitectura de Von Neumann:
                           |                                          |
                           |                                          |
                           +------------------------------------------+ 
-'''
+```
 
 Quin és l'origen de la paraula informàtica?
 
